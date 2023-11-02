@@ -7,7 +7,7 @@ class script(object):
 ★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
 
     MY_OWNER_TXT = """★ Name: 
-★ Username: @Telegram
+★ Username: 
 ★ ID: <code></code>
 ★ Country: World 🌍"""
 
