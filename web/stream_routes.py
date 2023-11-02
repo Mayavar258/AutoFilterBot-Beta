@@ -39,7 +39,7 @@ home_template = """
 </head>
 <body>
     <!-- Image above the chatbot title -->
-    <img src="https://telegra.ph/file/582962dbc60ae9ce722b0.jpg" alt="Chatbot Image" class="chatbot-image">
+    <img src="https://telegra.ph/file/43a052f4e2ebb2de48b5b.jpg" alt="Chatbot Image" class="chatbot-image">
 
     <!-- Chatbot title -->
     <h1 class="chatbot-title">SL Bots</h1>
