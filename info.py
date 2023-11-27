@@ -13,17 +13,17 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-API_ID = environ.get('API_ID', '')
+API_ID = environ.get('API_ID', '1522127')
 if len(API_ID) == 0:
     logging.error('API_ID is missing, exiting now')
     exit()
 else:
     API_ID = int(API_ID)
-API_HASH = environ.get('API_HASH', '')
+API_HASH = environ.get('API_HASH', '1252ffe16baf341bfd7236f92df76b0e')
 if len(API_HASH) == 0:
     logging.error('API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6804702516:AAHnNXwMoIF3EnibTAI7frU-MZwv4pdxznI')
 if len(BOT_TOKEN) == 0:
     logging.error('BOT_TOKEN is missing, exiting now')
     exit()
@@ -34,7 +34,7 @@ PORT = int(environ.get('PORT', '8080'))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/0d5e8ce91cb1f64eccfba.jpg https://telegra.ph/file/43a052f4e2ebb2de48b5b.jpg https://telegra.ph/file/35361a86b7ff20497ee27.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '')
+ADMINS = environ.get('ADMINS', '1006159057')
 if len(ADMINS) == 0:
     logging.error('ADMINS is missing, exiting now')
     exit()
@@ -52,7 +52,7 @@ else:
     LOG_CHANNEL = int(LOG_CHANNEL)
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://mayavar2580:A.M.R.K.S.@cluster0.tw6mrtw.mongodb.net/?retryWrites=true&w=majority")
 if len(DATABASE_URL) == 0:
     logging.error('DATABASE_URL is missing, exiting now')
     exit()
@@ -79,8 +79,8 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 # Other
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "http://shareus.io/")
-SHORTLINK_API = environ.get("SHORTLINK_API", "1Ofg71FgXNaZjJBIoiROGdAj9SF3")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "https://tnshort.net")
+SHORTLINK_API = environ.get("SHORTLINK_API", "d70d2f40cefc0a39d81e1b2be77d409da78f8aed")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = is_enabled(environ.get("IS_VERIFY", "False"), False)
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
