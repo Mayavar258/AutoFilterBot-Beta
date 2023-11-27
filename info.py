@@ -28,7 +28,7 @@ if len(BOT_TOKEN) == 0:
     logging.error('BOT_TOKEN is missing, exiting now')
     exit()
 SESSION_STRING = environ.get('SESSION_STRING', 'movie search')
-PORT = int(environ.get('PORT', '8080'))
+PORT = int(environ.get('PORT', '80'))
 
 # Bot pics
 PICS = (environ.get('PICS', 'https://telegra.ph/file/0d5e8ce91cb1f64eccfba.jpg https://telegra.ph/file/43a052f4e2ebb2de48b5b.jpg https://telegra.ph/file/35361a86b7ff20497ee27.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
