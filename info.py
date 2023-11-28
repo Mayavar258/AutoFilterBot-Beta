@@ -52,7 +52,7 @@ else:
     LOG_CHANNEL = int(LOG_CHANNEL)
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://mayavar2580:A.M.R.K.S.@cluster0.tw6mrtw.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://raja:AMRKS@cluster0.auwpwn0.mongodb.net/?retryWrites=true&w=majority")
 if len(DATABASE_URL) == 0:
     logging.error('DATABASE_URL is missing, exiting now')
     exit()
